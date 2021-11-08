@@ -1,0 +1,1 @@
+function getCalibrationData(){return {"data":{"red":{"minRed":100,"maxRed":140,"minGreen":33,"maxGreen":73,"minBlue":25,"maxBlue":65},"landmarks":{"cbl":{"x":91,"y":433},"cbr":{"x":417,"y":436},"ctl":{"x":89,"y":176},"ctr":{"x":421,"y":174},"gbl":{"x":195,"y":433},"gtl":{"x":195,"y":176},"gbr":{"x":306,"y":434},"gtr":{"x":307,"y":176}}}}}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<head>
+  <title>The last two digits of pi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="init()">
+  <div id="settings" style="border:white 10px solid;">
+    <input type="file" class="inpt" oninput="t(this);"></input>
+    <button type="button" class="btn" id="start" onclick="start()">start</button>
+    <button type="button" class="btn" id="calibrate" onclick="enableCalibMode()">calibrate</button>
+    <button class="btn" id="replay" onclick="replay()">replay game</button>
+  </div>
+  <div id="stats">
+    <label id="stats"></label>
+  </div>
+  <div id="sim" style="float: left; z-index: -1; position:relative; top:10%;">
+    <canvas id="display" onclick="calibrate_continue(event)" style="float: left; border: hotpink 2px solid;" width="500" height="500"></canvas>
+    
+    <div id="clD"
+    style="overflow-y: scroll; overflow-x: hidden; height:500px; width: 340px; float: left; display: block; border: hotpink 2px solid; border-left: hidden; border-right: hidden;;">
+    <label id="cl"
+    style="border: white 10px solid; display: block; width:310px; height: 500; float: left; white-space: pre-wrap; word-wrap: break-word; font-family: sans-serif;"></label>
+  </div>
+  <video id="rawIn" width="500" height="500" style="border: hotpink 2px solid;"></video>
+  </div>
+  <div id="credits">
+    <a>v0.1 created by Julian Danuser</a>
+  </div>
+
+  
+  <script src="js/analyzer.js"></script>
+  <script src="js/replay.js"></script>
+  <script src="js/tracker.js"></script>
+  <script src="js/guiConsole.js"></script>
+  <script src="js/calibrate.js"></script>
+  <script src="js/render.js"></script>
+  <script id="config" src="config/calibration.js"></script>
+  <script src="js/a.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</body>
